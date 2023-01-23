@@ -18,5 +18,5 @@
     published_ports: 8080:80
     mounts: 
     - source: webapp 
-      target: /var/www/html
+      target: /usr/share/nginx/html
 ...
