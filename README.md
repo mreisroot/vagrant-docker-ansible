@@ -40,4 +40,4 @@ No caso deste projeto, a pesquisa ficará assim:
 
 `192.168.15.55:8080`
 
-Altere o endereço IP de acordo com a sua rede nos arquivos **Vagrantfile**.
+Altere o endereço IP de acordo com a sua rede no arquivo **Vagrantfile**.
