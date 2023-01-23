@@ -1,0 +1,22 @@
+---
+- name: Criar volume para adicionar index.html
+  docker_volume:
+    volume_name: webapp
+    state: present
+
+- name: Adicionar index.html
+  copy:
+    src: index.html
+    dest: /var/lib/docker/volumes/webapp/_data
+
+- name: Criar container do webservice VIACEP
+  docker_container:
+    name: viacep
+    image: nginx
+    state: started
+    detach: yes
+    published_ports: 8080:80
+    mounts: 
+    - source: webapp 
+      target: /var/www/html
+...
