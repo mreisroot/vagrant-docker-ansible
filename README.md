@@ -34,10 +34,10 @@ Para criar a máquina virtual Vagrant, execute o comando:
 
 Para acessar a api servida pelo NGINX, digite na barra de pesquisa de um navegador web:
 
-`<ip_do_servidor>`
+`<ip_do_servidor>:8080`
 
 No caso deste projeto, a pesquisa ficará assim:
 
-`192.168.15.55`
+`192.168.15.55:8080`
 
 Altere o endereço IP de acordo com a sua rede nos arquivos **Vagrantfile** e **ansible/roles/nginx/tasks/main.yml**
