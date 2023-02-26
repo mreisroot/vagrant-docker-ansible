@@ -16,7 +16,6 @@
 - name: Adicionar a chave GPG do Docker
   shell:
     cmd: "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg"
-    warn: false
 
 - name: Configurar o repositório do Docker
   shell:
